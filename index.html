@@ -4,13 +4,17 @@
     <!-- ================= META ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashutosh Kumar Jha | Data Engineer Portfolio</title>
+    <title>Ashutosh Kumar Jha | Data Engineer</title>
+    <meta name="description" content="Portfolio of Ashutosh Kumar Jha - Data Engineer at GeeksforGeeks specializing in scalable ETL pipelines, data warehousing, AWS, and SQL/Python data architectures.">
+    <meta name="author" content="Ashutosh Kumar Jha">
 
     <!-- ================= GOOGLE FONT ================= -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- ================= CSS ================= -->
-    <link rel="stylesheet" href="styles.css?v=6.0">
+    <!-- ================= CSS LINK ================= -->
+    <link rel="stylesheet" href="styles.css?v=8.0">
 </head>
 
 <body>
@@ -24,7 +28,10 @@
 
         <!-- LOGO -->
         <div class="logo">
-            <h2>Ashutosh</h2>
+            <a href="#home">
+                Ashutosh<span class="logo-dot">.</span>
+                <span class="logo-badge">Data Engineer</span>
+            </a>
         </div>
 
         <!-- NAV LINKS -->
@@ -36,6 +43,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="nav-cta">
+                    <a href="My Resume.pdf" target="_blank" class="btn-nav">Resume</a>
+                </li>
             </ul>
         </nav>
 
@@ -57,31 +67,52 @@
                 <span class="pulse-dot"></span> Open to switch • Data Engineer
             </div>
 
-           <h1 class="hero-name">
-            Hi, I'm <span>Ashutosh Kumar Jha</span>
-        </h1>
+            <h1 class="hero-name">
+                Hi, I'm <span class="gradient-text">Ashutosh Kumar Jha</span>
+            </h1>
 
-            <h2>
-                Data Engineer | SQL | Python | ETL Pipelines | Cloud
-            </h2>
+            <div class="hero-tagline">
+                <span>Data Engineer</span>
+                <span class="sep">•</span>
+                <span>ETL Pipelines</span>
+                <span class="sep">•</span>
+                <span>Cloud &amp; Big Data</span>
+            </div>
 
-            <p>
+            <p class="hero-description">
                 I specialize in building scalable data pipelines, automated ETL workflows, and
-                designing robust data architectures to power data-driven decisions.
+                designing robust cloud data architectures that turn complex data into reliable, production-ready systems.
             </p>
 
             <!-- BUTTONS -->
             <div class="hero-buttons">
-                <a href="My Resume.pdf" class="btn primary" target="_blank">Download Resume</a>
+                <a href="My Resume.pdf" target="_blank" class="btn primary">Download Resume</a>
                 <a href="#projects" class="btn secondary">View Projects</a>
+                <a href="#contact" class="btn outline">Get In Touch</a>
+            </div>
+
+            <!-- KEY STATS -->
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <h4>1<span class="accent">+</span></h4>
+                    <p>Year Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h4>#749</h4>
+                    <p>Global Kaggle Rank</p>
+                </div>
+                <div class="stat-box">
+                    <h4>500K<span class="accent">+</span></h4>
+                    <p>Records/Day Processed</p>
+                </div>
             </div>
 
         </div>
 
         <!-- RIGHT IMAGE -->
         <div class="hero-right">
-            <div class="hero-image-wrapper">
-                <img src="Me.png" alt="Profile Photo">
+            <div class="hero-image-card">
+                <img src="Me.png" alt="Ashutosh Kumar Jha - Data Engineer">
                 <div class="floating-badge">
                     🏆 Kaggle Global Rank 749
                 </div>
@@ -96,24 +127,66 @@
 <!-- ======================= ABOUT ============================ -->
 <!-- ========================================================= -->
 
-<section id="about" class="section">
+<section id="about" class="section alt-bg">
 
-    <div class="container small-container">
+    <div class="container">
 
-        <h2 class="section-title">About Me</h2>
+        <div class="section-header">
+            <span class="section-pill">About Me</span>
+            <h2 class="section-title">Engineering Scalable Data Systems</h2>
+            <p class="section-subtitle">
+                Passionate about designing high-throughput data pipelines, data modeling, and bridging raw data into actionable enterprise systems.
+            </p>
+        </div>
 
-        <p class="section-text">
-            I am a Data Engineer with strong expertise in SQL, Python, ETL pipeline development,
-            and data warehousing. I specialize in designing and maintaining robust data architectures,
-            automating data ingestion pipelines, and transforming complex datasets to power reliable,
-            production-grade data systems.
-        </p>
+        <div class="about-layout">
 
-        <p class="section-text">
-            Having worked as a Data Engineer at GeeksforGeeks, my focus is on data modeling,
-            pipeline optimization, ETL/ELT workflows, and cloud data infrastructure. I enjoy solving complex scalability
-            challenges and continuously improving data systems.
-        </p>
+            <!-- LEFT: STORY & SUMMARY -->
+            <div class="about-card-narrative">
+                <h3>Data Engineer with Industry Experience</h3>
+                <p>
+                    I am a <strong>Data Engineer at GeeksforGeeks</strong> with hands-on expertise in developing scalable ETL/ELT pipelines,
+                    cloud data warehousing, and automated data ingestion systems using <strong>SQL, Python, AWS (Glue, Lambda, S3, Redshift), and GCP BigQuery</strong>.
+                </p>
+                <p>
+                    I manage data operations supporting an enterprise platform serving <strong>1M+ daily active users</strong>, processing over 500K+ records per day while enforcing strict validation, deduplication, and quality benchmarks.
+                </p>
+                <p>
+                    I enjoy solving complex data engineering problems—from dimensional schema design and query optimization
+                    to automating distributed workflows that empower high-performance analytics and machine learning applications.
+                </p>
+            </div>
+
+            <!-- RIGHT: 4 CORE PILLARS -->
+            <div class="pillars-grid">
+
+                <div class="pillar-box">
+                    <span class="pillar-icon">⚡</span>
+                    <h4>ETL &amp; Pipelines</h4>
+                    <p>Automated ingestion, data cleansing, and transformation across databases and REST APIs.</p>
+                </div>
+
+                <div class="pillar-box">
+                    <span class="pillar-icon">🗄️</span>
+                    <h4>Data Modeling</h4>
+                    <p>Star &amp; snowflake schemas, indexing, complex CTEs, window functions, and query optimization.</p>
+                </div>
+
+                <div class="pillar-box">
+                    <span class="pillar-icon">☁️</span>
+                    <h4>Cloud Data Stack</h4>
+                    <p>AWS (S3, Redshift, Glue, Lambda), Google BigQuery, and CI/CD automated pipelines.</p>
+                </div>
+
+                <div class="pillar-box">
+                    <span class="pillar-icon">📊</span>
+                    <h4>BI &amp; Downstream</h4>
+                    <p>Delivering high-reliability datasets feeding Power BI, Tableau, and ML predictive models.</p>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -123,59 +196,90 @@
 <!-- ======================= SKILLS =========================== -->
 <!-- ========================================================= -->
 
-<section id="skills" class="section light-bg">
+<section id="skills" class="section">
 
     <div class="container">
 
-        <h2 class="section-title">Skills</h2>
-        <p class="section-text">
-            Technical expertise in data engineering, ETL pipelines, database systems, and cloud infrastructure.
-        </p>
+        <div class="section-header">
+            <span class="section-pill">Core Competencies</span>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <p class="section-subtitle">
+                Technical stack spanning data engineering, cloud infrastructure, database architecture, and business intelligence.
+            </p>
+        </div>
 
         <div class="skills-grid">
 
-            <!-- DATA SKILLS -->
+            <!-- SQL -->
             <div class="skill-card">
-                <h3>SQL</h3>
-                <p>Advanced queries, joins, CTE, window functions, optimization, PostgreSQL & MySQL</p>
+                <div class="skill-card-top">
+                    <h3>SQL</h3>
+                    <span class="skill-badge">Advanced</span>
+                </div>
+                <p>Complex joins, CTEs, window functions, indexing, query optimization, PostgreSQL, MySQL &amp; Cloud SQL</p>
             </div>
 
+            <!-- PYTHON -->
             <div class="skill-card">
-                <h3>Python</h3>
-                <p>Pandas, NumPy, ETL scripting, API integration, data processing, automation</p>
+                <div class="skill-card-top">
+                    <h3>Python</h3>
+                    <span class="skill-badge">Core</span>
+                </div>
+                <p>Pandas, NumPy, ETL scripting, API integration, data manipulation, automation, OOP</p>
             </div>
 
-            <!-- BI TOOLS -->
+            <!-- ETL PIPELINES -->
             <div class="skill-card">
-                <h3>Power BI</h3>
-                <p>Dashboards, DAX, Data Modeling, KPI tracking</p>
+                <div class="skill-card-top">
+                    <h3>ETL Pipelines</h3>
+                    <span class="skill-badge">Architecture</span>
+                </div>
+                <p>AWS Glue, AWS Lambda, automated extraction, data transformation, schema design, validation protocols</p>
             </div>
 
+            <!-- DATA WAREHOUSING -->
             <div class="skill-card">
-                <h3>Tableau</h3>
-                <p>Interactive dashboards, storytelling, data visualization</p>
+                <div class="skill-card-top">
+                    <h3>Data Warehousing</h3>
+                    <span class="skill-badge">Modeling</span>
+                </div>
+                <p>Amazon Redshift, Google BigQuery, dimensional modeling, star &amp; snowflake schemas, data integrity</p>
             </div>
 
-            <!-- DATA TOOLS -->
+            <!-- CLOUD & TOOLS -->
             <div class="skill-card">
-                <h3>ETL Pipelines</h3>
-                <p>Automated extraction, data transformation, schema design, validation, pipelines</p>
+                <div class="skill-card-top">
+                    <h3>Cloud Platforms</h3>
+                    <span class="skill-badge">Cloud</span>
+                </div>
+                <p>AWS (S3, Redshift, Glue, Lambda), GCP (BigQuery), Git, GitHub, version control, Linux environments</p>
             </div>
 
+            <!-- POWER BI & TABLEAU -->
             <div class="skill-card">
-                <h3>Data Warehousing</h3>
-                <p>Dimensional modeling, star & snowflake schema, data integrity</p>
+                <div class="skill-card-top">
+                    <h3>Power BI &amp; Tableau</h3>
+                    <span class="skill-badge">Analytics</span>
+                </div>
+                <p>Interactive executive dashboards, advanced DAX measures, data modeling, KPI tracking, storytelling</p>
             </div>
 
-            <!-- CLOUD / TOOLS -->
+            <!-- ALTERYX -->
             <div class="skill-card">
-                <h3>Cloud & Tools</h3>
-                <p>AWS (S3, Redshift), GCP (BigQuery), Git, GitHub, Linux</p>
+                <div class="skill-card-top">
+                    <h3>Alteryx</h3>
+                    <span class="skill-badge">Workflows</span>
+                </div>
+                <p>Data blending, automated ETL workflows, data cleansing, spatial and analytical processing</p>
             </div>
 
+            <!-- MACHINE LEARNING -->
             <div class="skill-card">
-                <h3>Alteryx</h3>
-                <p>Data blending, ETL workflows, automation, data cleansing</p>
+                <div class="skill-card-top">
+                    <h3>Machine Learning</h3>
+                    <span class="skill-badge">Modeling</span>
+                </div>
+                <p>Scikit-Learn, supervised models, regression, classification, feature engineering, ensemble modeling</p>
             </div>
 
         </div>
@@ -188,59 +292,103 @@
 <!-- ======================= PROJECTS ========================= -->
 <!-- ========================================================= -->
 
-<section id="projects" class="section">
+<section id="projects" class="section alt-bg">
 
     <div class="container">
 
-        <h2 class="section-title">Projects</h2>
+        <div class="section-header">
+            <span class="section-pill">Portfolio</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+                Real-world projects showcasing scalable data pipelines, competitive machine learning, and BI systems.
+            </p>
+        </div>
 
         <div class="projects-grid">
 
-            <!-- 🔥 HIGHLIGHT PROJECT (KAGGLE) -->
-            <div class="project-card highlight-card">
-                <h3>🏆 Kaggle Competition - Global Rank 749</h3>
-                <p>
-                    Achieved top global rankings in Kaggle competitions by building optimized machine learning models and feature pipelines.
-                </p>
-                <ul>
-                    <li>🏅 Rank 749 globally in primary competition</li>
-                    <li>🏅 Rank 2479 globally in secondary competition</li>
-                    <li>Applied advanced feature engineering & model tuning</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://tinyurl.com/Kaggle-recent-comp" target="_blank">View Notebook</a>
+            <!-- 1. ETL DATA PIPELINE & WAREHOUSE -->
+            <div class="project-card featured-project">
+                <div>
+                    <span class="project-tag">Data Engineering</span>
+                    <h3>ETL Data Pipeline &amp; Warehouse</h3>
+                    <p>
+                        Designed and deployed scalable ETL pipelines to extract, clean, and transform multi-source datasets into structured data warehouses for high-performance querying.
+                    </p>
+                    <ul>
+                        <li>Automated multi-source extraction &amp; scheduled data ingestion</li>
+                        <li>Implemented star schema dimensional modeling &amp; data validation</li>
+                        <li>Significantly improved processing efficiency and query performance</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="project-tech">
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">SQL</span>
+                        <span class="tech-chip">AWS</span>
+                        <span class="tech-chip">ETL</span>
+                        <span class="tech-chip">Data Warehouse</span>
+                        <span class="tech-chip">APIs</span>
+                    </div>
+                    <a href="https://tinyurl.com/API-Integration-Data" target="_blank" class="project-btn">
+                        View on GitHub →
+                    </a>
                 </div>
             </div>
 
-            <!-- DATA ENGINEERING PROJECT -->
-            <div class="project-card">
-                <h3>ETL Data Pipeline & Warehouse</h3>
-                <p>
-                    Designed scalable ETL pipelines to extract, transform, and load large datasets into data warehouses.
-                </p>
-                <ul>
-                    <li>Automated data workflows and schema design</li>
-                    <li>Integrated multi-source APIs and relational databases</li>
-                    <li>Optimized processing efficiency and data reliability</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://tinyurl.com/API-Integration-Data" target="_blank">View on GitHub</a>
+            <!-- 2. KAGGLE COMPETITION (GLOBAL RANK 749) -->
+            <div class="project-card featured-project">
+                <div>
+                    <span class="project-tag gold">🏆 Top 1% Global</span>
+                    <h3>Kaggle Competition - Global Rank 749</h3>
+                    <p>
+                        Achieved top global standing among thousands of international data practitioners by engineering high-performance machine learning models and feature pipelines.
+                    </p>
+                    <ul>
+                        <li>Ranked 749 globally in primary competition</li>
+                        <li>Ranked 2479 globally in secondary competition</li>
+                        <li>Advanced feature selection, cross-validation &amp; hyperparameter tuning</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="project-tech">
+                        <span class="tech-chip">Python</span>
+                        <span class="tech-chip">Scikit-Learn</span>
+                        <span class="tech-chip">Feature Engineering</span>
+                        <span class="tech-chip">Ensemble Models</span>
+                    </div>
+                    <a href="https://tinyurl.com/Kaggle-recent-comp" target="_blank" class="project-btn">
+                        View Notebook →
+                    </a>
                 </div>
             </div>
 
-            <!-- POWER BI PROJECT -->
+            <!-- 3. E-SALES ANALYTICS (POWER BI) -->
             <div class="project-card">
-                <h3>E-Sales Analytics Dashboard (Power BI)</h3>
-                <p>
-                    Built an interactive dashboard to analyze KPIs, revenue trends, and customer behavior.
-                </p>
-                <ul>
-                    <li>Used advanced DAX & data modeling</li>
-                    <li>Delivered real-time executive business insights</li>
-                    <li>Cohort retention and conversion tracking</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://tinyurl.com/E-Sales-Dashboard" target="_blank">View Dashboard</a>
+                <div>
+                    <span class="project-tag">Business Intelligence</span>
+                    <h3>E-Sales Analytics &amp; Executive Dashboard</h3>
+                    <p>
+                        Constructed an interactive Power BI analytics suite tracking multi-channel sales KPIs, customer cohort retention, and revenue trajectory insights.
+                    </p>
+                    <ul>
+                        <li>Complex DAX measures and custom star-schema data modeling</li>
+                        <li>Executive KPI tracking and cohort retention visualization</li>
+                        <li>Automated refresh schedules with live business reporting</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="project-tech">
+                        <span class="tech-chip">Power BI</span>
+                        <span class="tech-chip">DAX</span>
+                        <span class="tech-chip">Data Modeling</span>
+                        <span class="tech-chip">KPI Tracking</span>
+                    </div>
+                    <a href="https://tinyurl.com/E-Sales-Dashboard" target="_blank" class="project-btn">
+                        View Dashboard →
+                    </a>
                 </div>
             </div>
 
@@ -254,25 +402,50 @@
 <!-- ======================= EXPERIENCE ======================= -->
 <!-- ========================================================= -->
 
-<section id="experience" class="section light-bg">
+<section id="experience" class="section">
 
     <div class="container small-container">
 
-        <h2 class="section-title">Experience</h2>
+        <div class="section-header">
+            <span class="section-pill">Career History</span>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">
+                Professional industry experience in data engineering, pipeline automation, and enterprise data workflows.
+            </p>
+        </div>
 
-        <!-- GFG -->
-        <div class="experience-item">
-            <h3>GeeksforGeeks</h3>
-            <p><strong>Data Engineer</strong></p>
-            <span>Jan 2025 – Present</span>
+        <div class="experience-card-container">
 
-            <ul>
-                <li>Designed, developed, and maintained scalable ETL pipelines using Python, SQL, AWS Glue, and AWS Lambda for automated data processing.</li>
-                <li>Processed and managed 500K+ records per day, supporting analytics and reporting for a digital platform serving 1M+ daily users.</li>
-                <li>Worked with Amazon S3, Amazon Redshift, and Google BigQuery for cloud-based data storage, transformation, and analytical processing.</li>
-                <li>Developed complex SQL queries, optimized data extraction logic, and enforced strict data validation and deduplication checks.</li>
-                <li>Automated recurring data processing and reporting workflows using Python and AWS services, boosting operational efficiency.</li>
-            </ul>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3>GeeksforGeeks</h3>
+                        <div class="experience-role">Data Engineer</div>
+                    </div>
+                    <span class="experience-badge">
+                        <span class="pulse-dot"></span> Jan 2025 – Present
+                    </span>
+                </div>
+
+                <ul>
+                    <li>Designed, developed, and maintained scalable ETL pipelines using Python, SQL, AWS Glue, and AWS Lambda for automated data processing.</li>
+                    <li>Processed and managed 500K+ records per day, supporting analytics and reporting for a digital platform serving 1M+ daily users.</li>
+                    <li>Worked with Amazon S3, Amazon Redshift, and Google BigQuery for cloud-based data storage, transformation, and analytical processing.</li>
+                    <li>Developed complex SQL queries, optimized data extraction logic, and enforced strict data validation and deduplication checks.</li>
+                    <li>Automated recurring data processing and reporting workflows using Python and AWS services, boosting operational efficiency.</li>
+                </ul>
+
+                <div class="experience-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>AWS Glue</span>
+                    <span>AWS Lambda</span>
+                    <span>Amazon Redshift</span>
+                    <span>Google BigQuery</span>
+                    <span>ETL Pipelines</span>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -283,35 +456,70 @@
 <!-- ======================= CONTACT ========================== -->
 <!-- ========================================================= -->
 
-<section id="contact" class="section">
+<section id="contact" class="section alt-bg">
 
-    <div class="container small-container">
+    <div class="container">
 
-        <h2 class="section-title">Get In Touch</h2>
-
-        <p class="section-text">
-            I'm open to opportunities in Data Engineering, ETL Pipeline Development, and Big Data roles.
-            Feel free to reach out for collaborations, freelance work, or full-time positions.
-        </p>
-
-        <!-- Contact Info -->
-        <div class="contact-info">
-
-            <p><strong>Email:</strong> 
-                <a href="mailto:ashutosh.k.jha007@gmail.com">ashutosh.k.jha007@gmail.com</a>
+        <div class="section-header">
+            <span class="section-pill">Connect</span>
+            <h2 class="section-title">Let's Build Something Together</h2>
+            <p class="section-subtitle">
+                I'm actively looking for Data Engineering roles and open to new opportunities, collaborations, and contracts.
             </p>
-
-            <p><strong>Phone:</strong> 
-                <a href="tel:+919903568209">+91 9903568209 / +91 8240704160</a>
-            </p>
-
         </div>
 
-        <!-- Social Links -->
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/in/ashutosh-k-jha-dev/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/AshutoshJha-007" target="_blank">GitHub</a>
-            <a href="My Resume.pdf" target="_blank">Resume</a>
+        <div class="contact-layout">
+
+            <!-- LEFT CALLOUT -->
+            <div class="contact-callout">
+                <h3>Looking for a dedicated Data Engineer?</h3>
+                <p>
+                    Whether you have an upcoming data engineering role, need to build robust ETL pipelines, or want to discuss data architectures, feel free to reach out.
+                </p>
+
+                <div class="contact-buttons">
+                    <a href="mailto:ashutosh.k.jha007@gmail.com" class="btn primary">Email Me</a>
+                    <a href="My Resume.pdf" target="_blank" class="btn secondary">View Resume</a>
+                </div>
+            </div>
+
+            <!-- RIGHT DETAILS -->
+            <div class="contact-info-grid">
+
+                <div class="contact-card-item">
+                    <div class="contact-card-icon">✉️</div>
+                    <div class="contact-card-meta">
+                        <h5>Email</h5>
+                        <a href="mailto:ashutosh.k.jha007@gmail.com">ashutosh.k.jha007@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card-item">
+                    <div class="contact-card-icon">📞</div>
+                    <div class="contact-card-meta">
+                        <h5>Phone</h5>
+                        <a href="tel:+919903568209">+91 9903568209 / +91 8240704160</a>
+                    </div>
+                </div>
+
+                <div class="contact-card-item">
+                    <div class="contact-card-icon">💼</div>
+                    <div class="contact-card-meta">
+                        <h5>LinkedIn</h5>
+                        <a href="https://www.linkedin.com/in/ashutosh-k-jha-dev/" target="_blank">in/ashutosh-k-jha-dev</a>
+                    </div>
+                </div>
+
+                <div class="contact-card-item">
+                    <div class="contact-card-icon">🐙</div>
+                    <div class="contact-card-meta">
+                        <h5>GitHub</h5>
+                        <a href="https://github.com/AshutoshJha-007" target="_blank">github.com/AshutoshJha-007</a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -324,17 +532,20 @@
 
 <footer class="footer">
 
-    <div class="container footer-container">
+    <div class="container">
 
-        <!-- Name -->
         <h3>Ashutosh Kumar Jha</h3>
-
-        <!-- Tagline -->
-        <p class="footer-text">
-            Data Engineer | SQL | Python | ETL Pipelines | Cloud
+        <p class="footer-tagline">
+            Data Engineer • ETL Architect • Python &amp; SQL • Cloud Data Systems
         </p>
 
-        <!-- Copyright -->
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/ashutosh-k-jha-dev/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AshutoshJha-007" target="_blank">GitHub</a>
+            <a href="mailto:ashutosh.k.jha007@gmail.com">Email</a>
+            <a href="My Resume.pdf" target="_blank">Resume</a>
+        </div>
+
         <p class="copyright">
             © 2026 Ashutosh Kumar Jha. All rights reserved.
         </p>
