@@ -507,6 +507,12 @@ header {
     border-radius: 20px;
 }
 
+.experience-date.current {
+    background: #ecfdf5;
+    color: #059669;
+    border: 1px solid #a7f3d0;
+}
+
 .experience-card ul {
     list-style: none;
     margin: 18px 0;
