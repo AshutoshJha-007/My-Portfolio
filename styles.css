@@ -147,6 +147,17 @@ header {
 }
 
 /* HERO IMAGE */
+.hero-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
 .hero-right img {
     width: 260px;
     height: 260px;
@@ -154,7 +165,33 @@ header {
     border-radius: 50%;
     border: 3px solid #007bff;
     background: linear-gradient(to right, #f8f9fa, #ffffff);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
+}
 
+.floating-badge {
+    position: absolute;
+    bottom: 8px;
+    right: -10px;
+    background: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111;
+    animation: float 3s ease-in-out infinite;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
 }
 
 
